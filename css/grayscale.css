@@ -110,17 +110,27 @@
   -webkit-background-clip: text;
 }
 
+@media (min-width: 768px) {
+  .masthead h1 {
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+}
+
 .masthead h2 {
   max-width: 20rem;
   font-size: 1rem;
 }
-
-@media (min-width: 768px) {
-  .masthead h1 {
-    font-size: 4rem;
-    line-height: 4rem;
-  }
+ul{
+  list-style: disc;
 }
+
+.masthead li{
+  color: white;
+  font-size: 1rem;
+  width: 1em;
+}
+
 
 @media (min-width: 992px) {
   .masthead {
@@ -174,6 +184,11 @@
 
 .about-section p {
   margin-bottom: 5rem;
+}
+.profilePic {
+  border-style: solid;
+  border-width: 8px;
+  border-color: #64a19d;
 }
 
 .projects-section {
