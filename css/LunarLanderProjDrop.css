@@ -11,13 +11,22 @@
   min-width: 100%;
   min-height: 100%;
 }
-#heading{
+.drop{
   font-family: serif;
   color: #d3d3d3;
+  background: rgba(0, 0, 0, 0.5);
+  color: white;
+  padding: 20px;
+  font-size: 20px;
+  border: none;
 }
 .text_overlay {
+
+  position: relative;
+  display: inline-block;
+/* OLD CODE
   position: fixed;
-  /*bottom: -30em;  for half-wall overlay*/
+  /*bottom: -30em;  for half-wall overlay
   bottom: 810;
   background: rgba(0, 0, 0, 0.5);
   color: #f1f1f1;
@@ -26,4 +35,23 @@
   padding: 0px 40px 20px 20px;
   font-family: sans-serif;
   word-wrap: break-word;
+*/
 }
+
+.content {
+  display: none;
+  position: absolute;
+  background-color: #000000;
+  color: white;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+.content li{
+  color: white;
+  padding: 16px 20px;
+  text-decoration: none;
+  display: block;
+}
+
+.text-overlay:hover .drop {display: block;}
